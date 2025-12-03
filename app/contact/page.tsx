@@ -60,7 +60,7 @@ export default function Contact() {
       const templateParams = {
         name: formData.name,
         email: formData.email,
-        company: formData.company || 'Không cung cấp',
+        company: formData.company || 'Không muốn cung cấp',
         subject: formData.subject,
         message: formData.message
       }
