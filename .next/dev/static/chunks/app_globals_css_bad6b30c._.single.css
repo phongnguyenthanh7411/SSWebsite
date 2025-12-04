@@ -431,6 +431,10 @@ img, video {
   display: inline-block;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -491,6 +495,10 @@ img, video {
   height: 100%;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .max-h-32 {
   max-height: 8rem;
 }
@@ -545,6 +553,10 @@ img, video {
 
 .w-px {
   width: 1px;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .max-w-2xl {
@@ -656,6 +668,22 @@ img, video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
+.gap-24 {
+  gap: 6rem;
+}
+
+.gap-32 {
+  gap: 8rem;
+}
+
+.gap-40 {
+  gap: 10rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {

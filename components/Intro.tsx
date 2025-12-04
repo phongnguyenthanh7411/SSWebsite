@@ -105,7 +105,7 @@ export default function Intro() {
                 <div className="bg-neutral-50 border border-dashed rounded-md p-4 flex-1">
                   <div className="flex items-center mb-2 space-x-2">
                     <Image src="/media/SqlServer.svg" alt="SQL Server" width={24} height={24} />
-                    <Image src="/media/MySQL.svg" alt="MySQL" width={24} height={24} />
+                    <Image src="/media/MySql.svg" alt="MySQL" width={24} height={24} />
                     <Image src="/media/PostgreSQL.svg" alt="PostgreSQL" width={24} height={24} />
                     <span className="text-sm font-semibold">On-premise Server</span>
                   </div>
@@ -179,14 +179,14 @@ export default function Intro() {
               <div className="flex flex-col justify-center items-stretch space-y-4 w-full h-full flex-1">
                 <div className="bg-neutral-50 border border-dashed rounded-md p-4 flex-1">
                   <div className="flex items-center mb-2">
-                    <Image src="/media/PowerAutomate.svg" alt="Power Automate" width={24} height={24} className="mr-2" />
+                    <Image src="/media/powerautomate.svg" alt="Power Automate" width={24} height={24} className="mr-2" />
                     <span className="text-sm font-semibold">Power Automate</span>
                   </div>
                   <p className="text-xs text-muted-foreground">Workflow Automation, Report Integration, Task Automation</p>
                 </div>
                 <div className="bg-neutral-50 border border-dashed rounded-md p-4 flex-1">
                   <div className="flex items-center mb-2">
-                    <Image src="/media/AIBuilder.svg" alt="AI Builder" width={24} height={24} className="mr-2" />
+                    <Image src="/media/aibuilder.svg" alt="AI Builder" width={24} height={24} className="mr-2" />
                     <span className="text-sm font-semibold">AI Builder</span>
                   </div>
                   <p className="text-xs text-muted-foreground">AI Automation, AI Recognition, Prediction & Classification</p>

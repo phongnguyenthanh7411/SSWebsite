@@ -18,7 +18,7 @@ export default function Header() {
     <header className="bg-background py-4 px-6 flex items-center justify-between border-b border-border sticky top-0 z-50">
       {/* Left side: Logo */}
       <div className="flex items-center">
-        <Image src="/media/logo.png" alt="Logo" width={50} height={50} className="rounded-full" />
+        <Image src="/media/Logo.png" alt="Logo" width={50} height={50} className="rounded-full" />
         <span className="ml-2 text-xl font-bold text-primary">Sigma Solution</span>
       </div>
 
