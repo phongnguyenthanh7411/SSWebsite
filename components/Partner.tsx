@@ -63,7 +63,7 @@ export default function Partner() {
   return (
     <section ref={ref} className={`py-16 px-6 bg-background ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-foreground mb-12">Did We Serve ?</h2>
+        
         <div className="flex flex-col md:flex-row justify-center items-center gap-40">
           {/* First Main Text */}
           <div className="flex flex-col items-center">
@@ -86,6 +86,7 @@ export default function Partner() {
             <p className="text-3xl font-bold text-center text-black">{count4}+</p>
           </div>
         </div>
+        
       </div>
     </section>
   )

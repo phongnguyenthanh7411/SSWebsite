@@ -97,3 +97,508 @@ Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
 [01:00:31.626] Browser WARN    Image with src "/media/PowerPlatform2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [01:00:32.691] Browser WARN    Image with src "/media/PowerPlatform2.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
 Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:16:20.368] Server  LOG      ✓ Compiled in 246ms
+[01:16:49.349] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:16:54.093] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:16:54.243] Browser WARN    Image with src "/media/PowerPlatform2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:16:55.321] Browser WARN    Image with src "/media/PowerPlatform2.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[01:18:32.470] Server  LOG      ✓ Compiled in 86ms
+[01:26:09.947] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:34:16.881] Server  ERROR   D:\sswebsite\.next\dev\server\chunks\ssr\[root-of-the-server]__7f7d8050._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[01:34:16.886] Server  ERROR    ⨯ ReferenceError: GoToTop is not defined
+[01:34:18.089] Browser ERROR   uncaughtError: ReferenceError: GoToTop is not defined
+[01:34:26.127] Server  WARN     ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[01:34:26.518] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:37:49.974] Browser WARN    Image with src "/media/PowerPlatform2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:39:06.512] Server  LOG      ✓ Compiled in 164ms
+[01:39:08.393] Server  LOG      ✓ Compiled in 228ms
+[01:39:34.851] Server  LOG      ✓ Compiled in 139ms
+[01:40:29.107] Server  LOG      ✓ Compiled in 132ms
+[01:40:59.456] Server  LOG      ✓ Compiled in 192ms
+[01:41:23.529] Server  LOG      ✓ Compiled in 172ms
+[01:43:22.895] Server  LOG      ✓ Compiled in 192ms
+[01:44:01.662] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:44:01.665] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:44:01.684] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:44:01.685] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:46:44.180] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:46:44.182] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:46:44.196] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:46:44.197] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:46:45.715] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:46:45.752] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:46:45.755] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:46:45.759] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:46:47.178] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:46:47.197] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:46:47.198] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:46:47.199] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:46:49.380] Browser WARN    Image with src "http://localhost:3000/media/AG.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:46:55.486] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:46:55.591] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:46:55.602] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:46:55.609] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:47:14.931] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:47:14.936] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:47:14.948] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:47:14.950] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:47:17.546] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:47:17.547] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:47:17.549] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:47:17.562] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:47:19.995] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:47:19.996] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:47:20.013] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:47:20.014] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:47:21.635] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:47:21.637] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:47:21.649] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:47:21.650] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:47:24.875] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:47:24.894] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:47:24.896] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:47:24.898] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:47:43.536] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:47:43.539] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:47:43.547] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:47:43.549] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:47:44.894] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:47:44.895] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:47:44.896] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:47:44.906] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:47:47.954] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:47:47.958] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:47:47.960] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:47:47.966] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:48:04.709] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:48:04.710] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:48:04.727] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:48:04.730] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:48:06.306] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:48:06.308] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:48:06.318] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:48:06.319] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:48:18.357] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:48:18.359] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:48:18.372] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:48:18.374] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:48:57.481] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:48:57.482] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:48:57.495] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:48:57.497] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:50:48.827] Server  LOG      ✓ Compiled in 453ms
+[01:51:01.947] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:51:01.948] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:51:01.950] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:51:01.952] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:51:15.302] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:51:15.307] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:51:15.309] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:51:15.312] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:51:17.174] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:51:17.176] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:51:17.187] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:51:17.190] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:51:22.007] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:51:22.009] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:51:22.018] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:51:22.019] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:52:02.139] Server  LOG      ✓ Compiled in 81ms
+[01:52:18.084] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:52:18.248] Browser WARN    Image with src "/media/PowerPlatform2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:52:40.377] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:52:40.380] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:52:40.390] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:52:40.395] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:52:44.238] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:52:44.240] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:52:44.242] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:52:44.253] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:52:49.252] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:52:49.262] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:52:49.274] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:52:49.276] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:02.937] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:02.940] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:02.942] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:02.949] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:04.250] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:04.252] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:04.265] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:04.266] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:06.876] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:06.878] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:06.880] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:06.886] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:08.028] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:08.031] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:08.043] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:08.045] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:25.286] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:25.290] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:25.303] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:25.307] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:26.537] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:26.539] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:26.555] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:26.562] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:28.476] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:28.478] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:28.480] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:28.486] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:29.197] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:29.198] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:29.211] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:29.212] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:32.130] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:32.151] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:32.153] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:32.157] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:40.891] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:40.908] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:40.910] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:40.917] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:43.122] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:43.124] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:43.131] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:43.138] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:43.828] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:43.829] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:43.841] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:43.842] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:45.884] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:45.885] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:45.887] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:45.889] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:47.901] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:47.903] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:47.918] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:47.920] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:48.918] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:48.920] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:48.922] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:48.925] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:50.546] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:50.563] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:50.564] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:50.566] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[01:53:54.370] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[01:53:54.372] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[01:53:54.374] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[01:53:54.380] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:02:51.539] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:02:51.557] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:02:51.559] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:02:51.568] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:02:52.740] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:02:52.762] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:02:52.764] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:02:52.765] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:02:54.526] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:02:54.545] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:02:54.546] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:02:54.547] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:02:55.147] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:02:55.165] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:02:55.167] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:02:55.169] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:16:29.446] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:16:29.447] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:16:29.449] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:16:29.458] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:16:34.306] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:16:34.321] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:16:34.322] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:16:34.326] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:34:40.477] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:34:40.478] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:34:40.480] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:34:40.489] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:34:42.468] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:34:42.470] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:34:42.483] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:34:42.484] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:43:13.068] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:43:14.868] Browser WARN    Image with src "/media/PowerPlatform2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:43:18.835] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:43:20.352] Browser WARN    Image with src "/media/PowerPlatform2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:43:43.259] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:43:43.261] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:43:43.272] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:43:43.275] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:44:01.852] Browser WARN    Image with src "http://localhost:3000/media/AG.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:49:25.070] Server  LOG      ✓ Compiled in 384ms
+[02:49:27.748] Server  LOG      ✓ Compiled in 182ms
+[02:49:34.396] Server  LOG      ✓ Compiled in 329ms
+[02:49:34.469] Browser ERROR   ./components/Header.tsx:67:1
+Parsing ecmascript source code failed
+  65 |     </header>
+  66 |   )
+> 67 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/Header.tsx
+    ./app/page.tsx
+[02:49:38.010] Server  LOG      ✓ Compiled in 150ms
+[02:49:39.080] Browser ERROR   ./components/Header.tsx:72:1
+Parsing ecmascript source code failed
+  70 |     </header>
+  71 |   )
+> 72 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/Header.tsx
+    ./app/page.tsx
+[02:49:55.999] Server  ERROR    ⨯ ./components/Header.tsx:72:1
+Parsing ecmascript source code failed
+  70 |     </header>
+  71 |   )
+> 72 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/Header.tsx
+    ./app/page.tsx
+
+
+[02:49:56.129] Browser ERROR   ./components/Header.tsx:72:1
+Parsing ecmascript source code failed
+  70 |     </header>
+  71 |   )
+> 72 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/Header.tsx
+    ./app/page.tsx
+[02:49:57.304] Browser ERROR   ./components/Header.tsx:72:1
+Parsing ecmascript source code failed
+  70 |     </header>
+  71 |   )
+> 72 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/Header.tsx
+    ./app/page.tsx
+[02:49:57.499] Browser ERROR   ./components/Header.tsx:72:1
+Parsing ecmascript source code failed
+  70 |     </header>
+  71 |   )
+> 72 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/Header.tsx
+    ./app/page.tsx
+[02:49:59.183] Browser ERROR   uncaughtError: Error: ./components/Header.tsx:72:1
+Parsing ecmascript source code failed
+  70 |     </header>
+  71 |   )
+> 72 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/Header.tsx
+    ./app/page.tsx
+
+
+[02:49:59.288] Browser ERROR   ./components/Header.tsx:72:1
+Parsing ecmascript source code failed
+  70 |     </header>
+  71 |   )
+> 72 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/Header.tsx
+    ./app/page.tsx
+[02:49:59.288] Browser ERROR   ./components/Header.tsx:72:1
+Parsing ecmascript source code failed
+  70 |     </header>
+  71 |   )
+> 72 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/Header.tsx
+    ./app/demo/page.tsx
+[02:49:59.288] Browser ERROR   ./components/Header.tsx:72:1
+Parsing ecmascript source code failed
+  70 |     </header>
+  71 |   )
+> 72 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/Header.tsx [Client Component Browser]
+    ./app/contact/page.tsx [Client Component Browser]
+    ./app/contact/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Header.tsx [Client Component SSR]
+    ./app/contact/page.tsx [Client Component SSR]
+    ./app/contact/page.tsx [Server Component]
+[02:49:59.288] Browser ERROR   ./components/Header.tsx:72:1
+Parsing ecmascript source code failed
+  70 |     </header>
+  71 |   )
+> 72 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/Header.tsx
+    ./app/products/page.tsx
+[02:49:59.288] Browser ERROR   ./components/Header.tsx:72:1
+Parsing ecmascript source code failed
+  70 |     </header>
+  71 |   )
+> 72 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/Header.tsx
+    ./app/team/page.tsx
+[02:49:59.288] Browser ERROR   ./components/Header.tsx:72:1
+Parsing ecmascript source code failed
+  70 |     </header>
+  71 |   )
+> 72 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/Header.tsx [Client Component Browser]
+    ./app/faqs/page.tsx [Client Component Browser]
+    ./app/faqs/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/Header.tsx [Client Component SSR]
+    ./app/faqs/page.tsx [Client Component SSR]
+    ./app/faqs/page.tsx [Server Component]
+[02:49:59.384] Browser ERROR   ./components/Header.tsx:72:1
+Parsing ecmascript source code failed
+  70 |     </header>
+  71 |   )
+> 72 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/Header.tsx
+    ./app/page.tsx
+[02:50:51.072] Browser ERROR   ./components/Header.tsx:68:1
+Parsing ecmascript source code failed
+  66 |       </header>
+  67 |   )
+> 68 | }
+     | ^
+
+Unexpected token. Did you mean `{'}'}` or `&rbrace;`?
+
+Import trace:
+  Server Component:
+    ./components/Header.tsx
+    ./app/page.tsx
+[02:51:15.108] Server  LOG      ✓ Compiled in 94ms
+[02:51:16.366] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:51:18.514] Browser WARN    Image with src "/media/PowerPlatform2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:51:19.586] Browser WARN    Image with src "/media/PowerPlatform2.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:51:57.294] Server  LOG      ✓ Compiled in 98ms
+[02:52:02.196] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:52:02.344] Browser WARN    Image with src "/media/PowerPlatform2.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:52:03.394] Browser WARN    Image with src "/media/PowerPlatform2.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[02:53:24.467] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:53:24.499] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:53:24.502] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:53:24.506] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:54:58.135] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:54:58.158] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:54:58.160] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:54:58.170] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:55:00.365] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:55:00.367] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:55:00.388] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:55:00.390] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:55:01.512] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:55:01.530] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:55:01.532] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:55:01.534] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:55:13.284] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:55:13.285] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:55:13.295] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:55:13.298] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:55:14.686] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:55:14.687] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:55:14.703] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:55:14.705] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:59:08.621] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:59:08.642] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:59:08.644] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:59:08.655] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:59:10.755] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:59:10.756] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:59:10.772] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:59:10.774] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:59:22.043] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:59:22.056] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:59:22.068] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:59:22.077] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[02:59:23.202] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[02:59:23.205] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[02:59:23.218] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[02:59:23.219] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[04:35:36.204] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[04:35:36.206] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[04:35:36.208] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[04:35:36.215] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[04:35:37.186] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/sd.jpg" "received" null
+[04:35:37.188] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cfo.jpg" "received" null
+[04:35:37.198] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/ceo.jpg" "received" null
+[04:35:37.201] Server  ERROR    ⨯ "The requested resource isn't a valid image for" "/media/cpo.jpg" "received" null
+[04:41:49.057] Browser WARN    Image with src "http://localhost:3000/media/AG.svg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

@@ -3,6 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
+import { Video } from 'lucide-react'
 
 export default function Intro() {
   const [isVisible, setIsVisible] = useState(false)
@@ -51,6 +52,10 @@ export default function Intro() {
             <Link href="/products" className="bg-secondary text-secondary-foreground px-6 py-3 rounded hover:bg-primary hover:text-primary-foreground hover:scale-110 transition-all duration-300 inline-block">
               Explore Now
             </Link>
+            <Link href="/demo" className="bg-transparent border border-secondary text-secondary-foreground px-6 py-3 rounded hover:bg-secondary hover:text-secondary-foreground hover:scale-110 transition-all duration-300 inline-block ml-4">
+              <Video className="inline w-6 h-6 mr-1 fill-current text-red-500" />Our Demo
+            </Link>
+
           </div>
 
           {/* Right side: Image */}
