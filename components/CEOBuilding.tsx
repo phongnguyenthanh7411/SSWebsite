@@ -26,7 +26,7 @@ export default function CEOBuilding() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto_1fr] gap-12 lg:gap-8 items-center">
           {/* Left side */}
           <div className="text-center">
-            <Image src="/media/ceo.jpg" alt="CEO" width={300} height={300} className="rounded-full mx-auto mb-6" />
+            <Image src="/media/gm.png" alt="CEO" width={300} height={300} className="rounded-full mx-auto mb-6" />
             <h3 className="text-2xl font-bold text-primary mb-2">PHONG NGUYEN</h3>
             <p className="text-lg text-muted-foreground">CEO</p>
           </div>

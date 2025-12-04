@@ -18,7 +18,6 @@ export default function Demo() {
             <iframe
               src="https://www.youtube.com/embed/RQKvvL-ExWA" // Replace with your YouTube video ID
               title="Demo Video"
-              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               className="w-full h-full rounded-lg"
