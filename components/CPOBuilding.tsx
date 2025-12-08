@@ -37,7 +37,7 @@ export default function CPOBuilding() {
           {/* Right side */}
 
           <div className="text-center">
-            <Image src="/media/quoc_cpo.png" alt="CPO" width={300} height={300} className="rounded-full mx-auto mb-6" />
+            <Image src="/media/quoc.png" alt="CPO" width={300} height={300} className="rounded-full mx-auto mb-6" />
             <h3 className="text-2xl font-bold text-primary mb-2">QUOC DANG</h3>
             <p className="text-lg text-muted-foreground">CPO</p>
           </div>
