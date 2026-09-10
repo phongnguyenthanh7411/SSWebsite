@@ -3,13 +3,24 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
-import { Video } from 'lucide-react'
+import { Video, ChevronLeft, ChevronRight } from 'lucide-react'
+import TechHeroGraphic from './TechHeroGraphic'
+import { useLanguage } from '@/context/LanguageContext'
 
 export default function Intro() {
+  const { t } = useLanguage()
   const [isVisible, setIsVisible] = useState(false)
   const [isVisible2, setIsVisible2] = useState(false)
   const ref = useRef(null)
   const ref2 = useRef(null)
+  const scrollContainerRef = useRef<HTMLDivElement>(null)
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollContainerRef.current) {
+      const scrollAmount = direction === 'left' ? -360 : 360
+      scrollContainerRef.current.scrollBy({ left: scrollAmount, behavior: 'smooth' })
+    }
+  }
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -44,157 +55,224 @@ export default function Intro() {
           {/* Left side: Text */}
           <div className="md:w-1/2 mb-8 md:mb-0">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Power Platform Services Partner
+              {t.hero.title}
             </h1>
             <p className="text-lg text-muted-foreground mb-6">
-              PowerPlatform Service Provider That You Can Absolutely Trust for Quality Product.
+              {t.hero.subtitle}
             </p>
             <Link href="/products" className="bg-secondary text-secondary-foreground px-6 py-3 rounded hover:bg-primary hover:text-primary-foreground hover:scale-110 transition-all duration-300 inline-block">
-              Explore Now
+              {t.hero.explore}
             </Link>
             <Link href="/demo" className="bg-transparent border border-secondary text-secondary-foreground px-6 py-3 rounded hover:bg-secondary hover:text-secondary-foreground hover:scale-110 transition-all duration-300 inline-block ml-4">
-              <Video className="inline w-6 h-6 mr-1 fill-current text-red-500" />Our Demo
+              <Video className="inline w-6 h-6 mr-1 fill-current text-red-500" />{t.hero.demo}
             </Link>
 
           </div>
 
-          {/* Right side: Image */}
-          <div className="md:w-1/2 flex justify-center">
-            <Image
-              src="/media/PowerPlatform2.png"
-              alt="PowerPlatform"
-              width={500}
-              height={300}
-              className="rounded-lg"
-            />
+          {/* Right side: Technology Vibe Animation */}
+          <div className="md:w-1/2 flex justify-center w-full">
+            <TechHeroGraphic />
           </div>
         </div>
       </section>
       {/* Product Simulation */}
       <section ref={ref2} className={`py-16 px-6 bg-white ${isVisible2 ? 'animate-fade-in' : 'opacity-0'}`}>
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-primary mb-4">
-            Product Flow Simulation
-          </h2>
-          <div className="flex items-center justify-start space-x-4 mt-8">
-            <div className="w-[28rem] h-80 bg-white border border-dashed rounded-2xl flex flex-col items-start justify-start p-4 transition-transform duration-300 hover:scale-110">
-              <span className="text-base font-semibold mb-4">Data Entry</span>
-              <div className="flex flex-col justify-center items-stretch space-y-4 w-full h-full flex-1">
-                <div className="bg-neutral-50 border border-dashed rounded-md p-4 flex-1">
-                  <div className="flex items-center mb-2">
-                    <Image src="/media/PowerApps.svg" alt="PowerApps" width={24} height={24} className="mr-2" />
-                    <span className="text-sm font-semibold">PowerApps Web Platform</span>
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-4">
+            <div>
+              <p className="text-sm font-semibold text-primary uppercase tracking-wider mb-1">{t.hero.flowBadge}</p>
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground">
+                {t.hero.flowTitle}
+              </h2>
+            </div>
+            <div className="flex items-center space-x-4 mt-3 md:mt-0">
+              <Link href="/products" className="text-sm font-medium text-primary hover:underline inline-flex items-center mr-2">
+                {t.hero.flowSeeAll}
+              </Link>
+              {/* Sleek Scroll Buttons */}
+              <div className="flex items-center space-x-1.5">
+                <button
+                  type="button"
+                  onClick={() => scroll('left')}
+                  aria-label="Cuộn sang trái"
+                  className="w-8 h-8 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-primary hover:text-white hover:border-primary flex items-center justify-center transition-all duration-200 shadow-sm"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </button>
+                <button
+                  type="button"
+                  onClick={() => scroll('right')}
+                  aria-label="Cuộn sang phải"
+                  className="w-8 h-8 rounded-full border border-gray-300 bg-white text-gray-700 hover:bg-primary hover:text-white hover:border-primary flex items-center justify-center transition-all duration-200 shadow-sm"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            ref={scrollContainerRef}
+            className="flex items-center justify-start space-x-4 mt-8 overflow-x-auto pb-5 custom-scrollbar scroll-smooth cursor-grab active:cursor-grabbing"
+          >
+            {/* 1. Database */}
+            <div className="w-[22rem] h-80 bg-white border border-dashed rounded-2xl flex flex-col items-start justify-start p-4 transition-transform duration-300 hover:scale-105 flex-shrink-0">
+              <span className="text-base font-semibold mb-3 text-primary flex items-center">
+                <span className="w-2.5 h-2.5 rounded-full bg-blue-500 mr-2"></span>
+                1. Database Architecture
+              </span>
+              <div className="flex flex-col justify-center items-stretch space-y-3 w-full h-full flex-1">
+                <div className="bg-neutral-50 border border-dashed rounded-md p-3 flex-1">
+                  <div className="flex items-center mb-1 space-x-1.5 flex-wrap">
+                    <Image src="/media/SqlServer.svg" alt="SQL Server" width={20} height={20} />
+                    <Image src="/media/PostgreSQL.svg" alt="PostgreSQL" width={20} height={20} />
+                    <span className="text-xs font-semibold text-foreground">RDBMS & Relational</span>
                   </div>
-                  <p className="text-xs text-muted-foreground">Filling data by Form-like, Excel-like table</p>
+                  <p className="text-xs text-muted-foreground">{t.flow.dbText1}</p>
                 </div>
-                <div className="bg-neutral-50 border border-dashed rounded-md p-4 flex-1">
-                  <div className="flex items-center mb-2">
-                    <Image src="/media/CopilotStudio.svg" alt="Copilot Studio" width={24} height={24} className="mr-2" />
-                    <span className="text-sm font-semibold">Copilot Studio Chat Platform</span>
+                <div className="bg-neutral-50 border border-dashed rounded-md p-3 flex-1">
+                  <div className="flex items-center mb-1 space-x-1.5 flex-wrap">
+                    <span className="px-1.5 py-0.5 bg-blue-100 text-blue-800 text-[10px] font-bold rounded">MongoDB</span>
+                    <span className="px-1.5 py-0.5 bg-red-100 text-red-800 text-[10px] font-bold rounded">Redis</span>
+                    <span className="px-1.5 py-0.5 bg-emerald-100 text-emerald-800 text-[10px] font-bold rounded">SQLite</span>
                   </div>
-                  <p className="text-xs text-muted-foreground">Filling data by chat with Agent</p>
+                  <p className="text-xs text-muted-foreground">{t.flow.dbText2}</p>
                 </div>
               </div>
             </div>
-            <svg width="50" height="10" className="flex-shrink-0">
-              <line x1="0" y1="5" x2="40" y2="5" stroke="currentColor" strokeWidth="2" markerEnd="url(#arrowhead1)" />
+
+            <svg width="36" height="10" className="flex-shrink-0">
+              <line x1="0" y1="5" x2="28" y2="5" stroke="currentColor" strokeWidth="2" markerEnd="url(#arrowhead1)" />
               <defs>
                 <marker id="arrowhead1" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
                   <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
                 </marker>
               </defs>
             </svg>
-            <div className="w-[28rem] h-80 bg-white border border-dashed rounded-2xl flex flex-col items-start justify-start p-4 transition-transform duration-300 hover:scale-110">
-              <span className="text-base font-semibold mb-4">Data Storage</span>
-              <div className="flex flex-col justify-center items-stretch space-y-4 w-full h-full flex-1">
-                <div className="bg-neutral-50 border border-dashed rounded-md p-4 flex-1">
-                  <div className="flex items-center mb-2 space-x-2">
-                    <Image src="/media/SqlServer.svg" alt="SQL Server" width={24} height={24} />
-                    <Image src="/media/MySql.svg" alt="MySQL" width={24} height={24} />
-                    <Image src="/media/PostgreSQL.svg" alt="PostgreSQL" width={24} height={24} />
-                    <span className="text-sm font-semibold">On-premise Server</span>
+
+            {/* 2. Backend */}
+            <div className="w-[22rem] h-80 bg-white border border-dashed rounded-2xl flex flex-col items-start justify-start p-4 transition-transform duration-300 hover:scale-105 flex-shrink-0">
+              <span className="text-base font-semibold mb-3 text-primary flex items-center">
+                <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 mr-2"></span>
+                2. Backend & Services
+              </span>
+              <div className="flex flex-col justify-center items-stretch space-y-3 w-full h-full flex-1">
+                <div className="bg-neutral-50 border border-dashed rounded-md p-3 flex-1">
+                  <div className="flex items-center mb-1 space-x-1.5">
+                    <Image src="/media/GL.svg" alt="Golang" width={20} height={20} />
+                    <Image src="/media/DN.svg" alt=".NET" width={20} height={20} />
+                    <Image src="/media/NJ.svg" alt="NodeJS" width={20} height={20} />
                   </div>
-                  <p className="text-xs text-muted-foreground">Storing data with structure database On-premise</p>
+                  <p className="text-xs text-muted-foreground">{t.flow.beText1}</p>
                 </div>
-                <div className="bg-neutral-50 border border-dashed rounded-md p-4 flex-1">
-                  <div className="flex items-center mb-2 space-x-2">
-                    <Image src="/media/Dataverse.svg" alt="Dataverse" width={24} height={24} />
-                    <Image src="/media/Sharepoint.svg" alt="SharePoint" width={24} height={24} />
-                    <span className="text-sm font-semibold">Microsoft Cloud Services</span>
+                <div className="bg-neutral-50 border border-dashed rounded-md p-3 flex-1">
+                  <div className="flex items-center mb-1 space-x-1.5">
+                    <Image src="/media/FA.svg" alt="FastAPI" width={20} height={20} />
+                    <span className="text-xs font-semibold text-foreground">Python & FastAPI</span>
                   </div>
-                  <p className="text-xs text-muted-foreground">Storing data with structure database on Microsoft-Cloud</p>
+                  <p className="text-xs text-muted-foreground">{t.flow.beText2}</p>
                 </div>
               </div>
             </div>
-            <svg width="50" height="10" className="flex-shrink-0">
-              <line x1="0" y1="5" x2="40" y2="5" stroke="currentColor" strokeWidth="2" markerEnd="url(#arrowhead2)" />
+
+            <svg width="36" height="10" className="flex-shrink-0">
+              <line x1="0" y1="5" x2="28" y2="5" stroke="currentColor" strokeWidth="2" markerEnd="url(#arrowhead2)" />
               <defs>
                 <marker id="arrowhead2" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
                   <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
                 </marker>
               </defs>
             </svg>
-            {/* Business Intelligence */}
-            <div className="w-[28rem] h-80 bg-white border border-dashed rounded-2xl flex flex-col items-start justify-start p-4 transition-transform duration-300 hover:scale-110">
-              <span className="text-base font-semibold mb-4">Business Intelligence</span>
-              <div className="bg-neutral-50 border border-dashed rounded-md p-4 w-full flex-1 flex flex-col space-y-2 overflow-hidden">
-                <div className="flex items-center">
-                  <Image src="/media/PowerBI.svg" alt="Power BI" width={24} height={24} className="mr-2" />
-                  <span className="text-sm font-semibold">Power BI</span>
+
+            {/* 3. Frontend */}
+            <div className="w-[22rem] h-80 bg-white border border-dashed rounded-2xl flex flex-col items-start justify-start p-4 transition-transform duration-300 hover:scale-105 flex-shrink-0">
+              <span className="text-base font-semibold mb-3 text-primary flex items-center">
+                <span className="w-2.5 h-2.5 rounded-full bg-teal-500 mr-2"></span>
+                3. Frontend & Mobile
+              </span>
+              <div className="flex flex-col justify-center items-stretch space-y-3 w-full h-full flex-1">
+                <div className="bg-neutral-50 border border-dashed rounded-md p-3 flex-1">
+                  <div className="flex items-center mb-1 space-x-1.5">
+                    <span className="px-1.5 py-0.5 bg-cyan-100 text-cyan-800 text-[10px] font-bold rounded">React / Next</span>
+                    <span className="px-1.5 py-0.5 bg-emerald-100 text-emerald-800 text-[10px] font-bold rounded">Vue.js</span>
+                    <span className="px-1.5 py-0.5 bg-sky-100 text-sky-800 text-[10px] font-bold rounded">Tailwind</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground">{t.flow.feText1}</p>
                 </div>
-                <div className="flex-1 flex items-center justify-center min-h-0">
-                  <svg width="200" height="80" viewBox="0 0 200 80" className="max-w-full max-h-full">
-                    <path d="M10 60 L50 45 L90 52 L130 30 L170 37" stroke="currentColor" strokeWidth="3" fill="none" strokeDasharray="300" strokeDashoffset="300">
-                      <animate attributeName="stroke-dashoffset" from="300" to="0" dur="2s" repeatCount="indefinite" />
-                    </path>
-                  </svg>
-                </div>
-                <div className="flex-1 flex items-center justify-center min-h-0">
-                  <svg width="200" height="80" viewBox="0 0 200 80" className="max-w-full max-h-full">
-                    <rect x="20" y="55" width="20" height="0" fill="currentColor">
-                      <animate attributeName="height" from="0" to="25" dur="1.5s" repeatCount="indefinite" />
-                      <animate attributeName="y" from="55" to="30" dur="1.5s" repeatCount="indefinite" />
-                    </rect>
-                    <rect x="60" y="40" width="20" height="0" fill="currentColor">
-                      <animate attributeName="height" from="0" to="40" dur="1.5s" begin="0.3s" repeatCount="indefinite" />
-                      <animate attributeName="y" from="40" to="0" dur="1.5s" begin="0.3s" repeatCount="indefinite" />
-                    </rect>
-                    <rect x="100" y="25" width="20" height="0" fill="currentColor">
-                      <animate attributeName="height" from="0" to="55" dur="1.5s" begin="0.6s" repeatCount="indefinite" />
-                      <animate attributeName="y" from="25" to="0" dur="1.5s" begin="0.6s" repeatCount="indefinite" />
-                    </rect>
-                    <rect x="140" y="45" width="20" height="0" fill="currentColor">
-                      <animate attributeName="height" from="0" to="35" dur="1.5s" begin="0.9s" repeatCount="indefinite" />
-                      <animate attributeName="y" from="45" to="20" dur="1.5s" begin="0.9s" repeatCount="indefinite" />
-                    </rect>
-                  </svg>
+                <div className="bg-neutral-50 border border-dashed rounded-md p-3 flex-1">
+                  <div className="flex items-center mb-1 space-x-1.5">
+                    <span className="px-1.5 py-0.5 bg-blue-100 text-blue-800 text-[10px] font-bold rounded">Flutter</span>
+                    <span className="px-1.5 py-0.5 bg-purple-100 text-purple-800 text-[10px] font-bold rounded">PWA</span>
+                    <span className="text-xs font-semibold text-foreground">Multi-Platform</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground">{t.flow.feText2}</p>
                 </div>
               </div>
             </div>
-            <svg width="50" height="10" className="flex-shrink-0">
-              <line x1="0" y1="5" x2="40" y2="5" stroke="currentColor" strokeWidth="2" markerEnd="url(#arrowhead3)" />
+
+            <svg width="36" height="10" className="flex-shrink-0">
+              <line x1="0" y1="5" x2="28" y2="5" stroke="currentColor" strokeWidth="2" markerEnd="url(#arrowhead3)" />
               <defs>
                 <marker id="arrowhead3" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
                   <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
                 </marker>
               </defs>
             </svg>
-            <div className="w-[28rem] h-80 bg-white border border-dashed rounded-2xl flex flex-col items-start justify-start p-4 transition-transform duration-300 hover:scale-110">
-              <span className="text-base font-semibold mb-4">Business Automation</span>
-              <div className="flex flex-col justify-center items-stretch space-y-4 w-full h-full flex-1">
-                <div className="bg-neutral-50 border border-dashed rounded-md p-4 flex-1">
-                  <div className="flex items-center mb-2">
-                    <Image src="/media/powerautomate.svg" alt="Power Automate" width={24} height={24} className="mr-2" />
-                    <span className="text-sm font-semibold">Power Automate</span>
+
+            {/* 4. AI / ML */}
+            <div className="w-[22rem] h-80 bg-white border border-dashed rounded-2xl flex flex-col items-start justify-start p-4 transition-transform duration-300 hover:scale-105 flex-shrink-0">
+              <span className="text-base font-semibold mb-3 text-primary flex items-center">
+                <span className="w-2.5 h-2.5 rounded-full bg-indigo-500 mr-2"></span>
+                4. AI / ML Engineering
+              </span>
+              <div className="flex flex-col justify-center items-stretch space-y-3 w-full h-full flex-1">
+                <div className="bg-neutral-50 border border-dashed rounded-md p-3 flex-1">
+                  <div className="flex items-center mb-1 space-x-1.5">
+                    <span className="px-1.5 py-0.5 bg-gray-100 text-gray-800 text-[10px] font-bold rounded">OpenAI</span>
+                    <span className="px-1.5 py-0.5 bg-amber-100 text-amber-800 text-[10px] font-bold rounded">Claude</span>
+                    <span className="px-1.5 py-0.5 bg-purple-100 text-purple-800 text-[10px] font-bold rounded">Ollama</span>
                   </div>
-                  <p className="text-xs text-muted-foreground">Workflow Automation, Report Integration, Task Automation</p>
+                  <p className="text-xs text-muted-foreground">{t.flow.aiText1}</p>
                 </div>
-                <div className="bg-neutral-50 border border-dashed rounded-md p-4 flex-1">
-                  <div className="flex items-center mb-2">
-                    <Image src="/media/aibuilder.svg" alt="AI Builder" width={24} height={24} className="mr-2" />
-                    <span className="text-sm font-semibold">AI Builder</span>
+                <div className="bg-neutral-50 border border-dashed rounded-md p-3 flex-1">
+                  <div className="flex items-center mb-1 space-x-1.5">
+                    <span className="px-1.5 py-0.5 bg-emerald-100 text-emerald-800 text-[10px] font-bold rounded">LangChain</span>
+                    <span className="px-1.5 py-0.5 bg-blue-100 text-blue-800 text-[10px] font-bold rounded">LlamaIndex</span>
                   </div>
-                  <p className="text-xs text-muted-foreground">AI Automation, AI Recognition, Prediction & Classification</p>
+                  <p className="text-xs text-muted-foreground">{t.flow.aiText2}</p>
+                </div>
+              </div>
+            </div>
+
+            <svg width="36" height="10" className="flex-shrink-0">
+              <line x1="0" y1="5" x2="28" y2="5" stroke="currentColor" strokeWidth="2" markerEnd="url(#arrowhead4)" />
+              <defs>
+                <marker id="arrowhead4" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="currentColor" />
+                </marker>
+              </defs>
+            </svg>
+
+            {/* 5. BI & Low-Code */}
+            <div className="w-[22rem] h-80 bg-white border border-dashed rounded-2xl flex flex-col items-start justify-start p-4 transition-transform duration-300 hover:scale-105 flex-shrink-0">
+              <span className="text-base font-semibold mb-3 text-primary flex items-center">
+                <span className="w-2.5 h-2.5 rounded-full bg-amber-500 mr-2"></span>
+                5. BI & Low-Code
+              </span>
+              <div className="flex flex-col justify-center items-stretch space-y-3 w-full h-full flex-1">
+                <div className="bg-neutral-50 border border-dashed rounded-md p-3 flex-1">
+                  <div className="flex items-center mb-1 space-x-1.5">
+                    <Image src="/media/PowerBI.svg" alt="Power BI" width={20} height={20} />
+                    <Image src="/media/powerautomate.svg" alt="Automate" width={20} height={20} />
+                    <Image src="/media/Sharepoint.svg" alt="SharePoint" width={20} height={20} />
+                  </div>
+                  <p className="text-xs text-muted-foreground">{t.flow.biText1}</p>
+                </div>
+                <div className="bg-neutral-50 border border-dashed rounded-md p-3 flex-1">
+                  <div className="flex items-center mb-1 space-x-1.5">
+                    <span className="px-1.5 py-0.5 bg-red-100 text-red-800 text-[10px] font-bold rounded">Streamlit</span>
+                    <span className="px-1.5 py-0.5 bg-blue-100 text-blue-800 text-[10px] font-bold rounded">Dash</span>
+                  </div>
+                  <p className="text-xs text-muted-foreground">{t.flow.biText2}</p>
                 </div>
               </div>
             </div>

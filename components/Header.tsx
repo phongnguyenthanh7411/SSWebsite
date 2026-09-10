@@ -3,9 +3,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import { Globe } from 'lucide-react'
+import { useLanguage } from '@/context/LanguageContext'
 
 export default function Header() {
   const pathname = usePathname()
+  const { language, toggleLanguage, t } = useLanguage()
 
   const getLinkClasses = (href: string) => {
     const isActive = pathname === href
@@ -26,19 +29,34 @@ export default function Header() {
 
       {/* Middle: Nav Bar */}
       <nav className="hidden md:flex space-x-8">
-        <Link href="/" className={getLinkClasses('/')}>Home</Link>
-        <Link href="/products" className={getLinkClasses('/products')}>Our Products</Link>
-        <Link href="/team" className={getLinkClasses('/team')}>Core Team</Link>
-        <Link href="/faqs" className={getLinkClasses('/faqs')}>FAQs</Link>
+        <Link href="/" className={getLinkClasses('/')}>{t.nav.home}</Link>
+        <Link href="/products" className={getLinkClasses('/products')}>{t.nav.products}</Link>
+        <Link href="/team" className={getLinkClasses('/team')}>{t.nav.team}</Link>
+        <Link href="/faqs" className={getLinkClasses('/faqs')}>{t.nav.faqs}</Link>
       </nav>
 
-      {/* Right side: Contact Us Link */}
-      <div>
-        <Link href="/contact" className="bg-primary text-primary-foreground px-4 py-2 rounded hover:bg-primary/90 flex items-center">
-          <svg className="w-4 h-4 mr-2 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      {/* Right side: Language Switcher & Contact Us Link */}
+      <div className="flex items-center space-x-3">
+        {/* Language Switch Button */}
+        <button
+          type="button"
+          onClick={toggleLanguage}
+          aria-label="Switch language"
+          className="flex items-center space-x-1.5 px-3 py-2 rounded-lg border border-dashed border-gray-300 bg-white hover:border-primary/50 hover:bg-neutral-50 transition-all duration-200 shadow-sm font-mono text-xs font-bold select-none cursor-pointer"
+          title={language === 'vi' ? 'Switch to English' : 'Chuyển sang Tiếng Việt'}
+        >
+          <Globe className="w-3.5 h-3.5 text-primary" />
+          <span className={language === 'vi' ? 'text-primary font-extrabold' : 'text-neutral-400 font-medium'}>VI</span>
+          <span className="text-neutral-300">/</span>
+          <span className={language === 'en' ? 'text-primary font-extrabold' : 'text-neutral-400 font-medium'}>EN</span>
+        </button>
+
+        {/* Contact Us Link */}
+        <Link href="/contact" className="bg-primary text-primary-foreground px-4 py-2 rounded-lg hover:bg-primary/90 flex items-center font-semibold text-sm transition-colors shadow-sm">
+          <svg className="w-4 h-4 mr-1.5 rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
           </svg>
-          Contact Us
+          {t.nav.contact}
         </Link>
       </div>
     </header>

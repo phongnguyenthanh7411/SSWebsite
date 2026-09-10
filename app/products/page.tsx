@@ -1,34 +1,32 @@
 import Header from '../../components/Header'
-import WHBuilding from '../../components/WHBuilding'
-import MSBuilding from '../../components/MSBuilding'
-import DMSBuilding from '../../components/DMSBuilding'
-import PBIBuilding from '../../components/PBIBuilding'
-import ATMBuilding from '../../components/ATMBuilding'
-import ADBuilding from '../../components/ADBuilding'
 import AnimatedTitle from '../../components/AnimatedTitle'
+import MatrixOverview from '../../components/MatrixOverview'
+import DatabaseBuilding from '../../components/DatabaseBuilding'
+import BackendBuilding from '../../components/BackendBuilding'
+import FrontendBuilding from '../../components/FrontendBuilding'
+import AIMLBuilding from '../../components/AIMLBuilding'
+import BILowCodeBuilding from '../../components/BILowCodeBuilding'
 import GoToTop from '@/components/GoToTop'
 import ZaloButton from '@/components/ZaloButton'
 
 export default function Products() {
   return (
-    <div>
+    <div className="scroll-smooth">
       <Header />
-      <AnimatedTitle text="WHAT ARE WE BUILDING ?" />
-      <WHBuilding />
+      <AnimatedTitle text="FULL-STACK TECHNOLOGY & SOLUTIONS" />
+      <MatrixOverview />
       <div className="border-b border-solid border-gray-300 mx-6"></div>
-      <MSBuilding />
+      <DatabaseBuilding />
       <div className="border-b border-solid border-gray-300 mx-6"></div>
-      <DMSBuilding />
+      <BackendBuilding />
       <div className="border-b border-solid border-gray-300 mx-6"></div>
-      <PBIBuilding />
+      <FrontendBuilding />
       <div className="border-b border-solid border-gray-300 mx-6"></div>
-      <ATMBuilding />
+      <AIMLBuilding />
       <div className="border-b border-solid border-gray-300 mx-6"></div>
-      <AnimatedTitle text="ADVANCE FRAMEWORK DEVELOPMENT" />
-      <ADBuilding />
+      <BILowCodeBuilding />
       <GoToTop />
       <ZaloButton />
-
     </div>
   )
 }

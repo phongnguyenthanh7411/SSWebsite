@@ -41,8 +41,8 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$internal$2f$font$2f$google$2f$i
 ;
 ;
 const metadata = {
-    title: 'Sigma Solution',
-    description: 'Welcome to Sigma Solution - Your trusted partner for innovative solutions.',
+    title: 'Sigma Solution - Full-Stack Technology & AI Solutions',
+    description: 'Sigma Solution - Your trusted partner for Full-Stack Development, Data Architecture, Modern BI & Enterprise AI Solutions.',
     icons: {
         icon: '/media/Logo.png',
         apple: '/media/Logo.png'

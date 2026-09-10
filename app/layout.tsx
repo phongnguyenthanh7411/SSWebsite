@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import { LanguageProvider } from '@/context/LanguageContext'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Sigma Solution',
-  description: 'Welcome to Sigma Solution - Your trusted partner for innovative solutions.',
+  title: 'Sigma Solution - Full-Stack Technology & AI Solutions',
+  description: 'Sigma Solution - Your trusted partner for Full-Stack Development, Data Architecture, Modern BI & Enterprise AI Solutions.',
   icons: {
     icon: '/media/Logo.png',
     apple: '/media/Logo.png',
@@ -20,7 +21,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
+      </body>
     </html>
   )
 }
